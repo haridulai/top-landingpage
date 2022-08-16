@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header > div.header__nav > ul {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+div.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+div.hero > div.hero__image > img {
+  max-width: 450px;
+}
+
+div.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+div.info > div.info__options {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+div.info__options > div.option__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+div.info__options > div.option__block > img {
+  max-width: 250px;
+}
+
+div.quote {
+  background-color: lightgray;
+}
+
+div.quote > div.quote__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+div.quote__text > p {
+  text-align: right;
+}
+
+div.signup {
+  padding: 20px;
+}
+
+div.signup > div.signup__block {
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+footer {
+  background-color: darkgray;
+  color: white;
+  text-align: center;
+}
