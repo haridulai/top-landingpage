@@ -11,6 +11,11 @@ header {
   justify-content: space-between;
 }
 
+header > div.header__logo > p {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
 header > div.header__nav > ul {
   padding-left: 0;
   list-style: none;
@@ -19,14 +24,36 @@ header > div.header__nav > ul {
   gap: 10px;
 }
 
+header,
+div.hero,
+footer {
+  background-color: #1f2937;
+}
+
 div.hero {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-div.hero > div.hero__image > img {
-  max-width: 450px;
+div.hero > div.hero__content > h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #f9faf8;
+}
+div.hero > div.hero__content > p {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+div.hero > div.hero__image {
+  width: 450px;
+  height: 200px;
+  background-color: lightgray;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 div.info {
@@ -34,6 +61,12 @@ div.info {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+div.info > h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f2937;
 }
 
 div.info > div.info__options {
@@ -52,7 +85,9 @@ div.info__options > div.option__block {
 
 div.info__options > div.option__block > div.option__image {
   border: 2px solid #3882f6;
-  border-radius: 5px;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
 }
 div.info__options > div.option__block > div.option__image > img {
   max-width: 250px;
@@ -60,7 +95,7 @@ div.info__options > div.option__block > div.option__image > img {
 }
 
 div.quote {
-  background-color: lightgray;
+  background-color: #e5e7eb;
 }
 
 div.quote > div.quote__text {
@@ -69,8 +104,15 @@ div.quote > div.quote__text {
   justify-content: space-around;
 }
 
+div.quote__text > h3 {
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
+  font-weight: lighter;
+}
 div.quote__text > p {
   text-align: right;
+  font-weight: 700;
 }
 
 div.signup {
@@ -89,4 +131,12 @@ footer {
   background-color: darkgray;
   color: white;
   text-align: center;
+}
+
+.button__signUp {
+  background-color: #3882f6;
+  color: white;
+}
+.button__signUp.button__signUp--transparent {
+  border-color: white;
 }
